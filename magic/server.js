@@ -4,7 +4,7 @@ const path = require('path');
 
 const app = express();
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3001;
 
 app.use('/magic', express.static(__dirname));
 
