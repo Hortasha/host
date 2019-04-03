@@ -2,7 +2,7 @@ require('es6-promise').polyfill();
 require('isomorphic-fetch');
 
 //Setup
-var port = 8080;
+var port = 3000;
 var express = require('express');
 var socket = require('socket.io');
 var app = express();
