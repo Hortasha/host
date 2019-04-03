@@ -13,7 +13,7 @@ var io = socket(server);
 
 
 //static file
-app.use('/thrones', express.static('public'));
+app.use(express.static('public'));
 
 //Game Variables
 var lobbys = [];
