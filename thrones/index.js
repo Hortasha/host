@@ -1,8 +1,7 @@
-require('es6-promise').polyfill();
 require('isomorphic-fetch');
 
 //Setup
-var port = 3001;
+var port = 3000;
 var express = require('express');
 var socket = require('socket.io');
 var app = express();
@@ -314,7 +313,7 @@ io.on('connection', function(socket) {
  class Character {
    constructor(name, icon, sex, aliases) {
      this.name = name;
-     this.icon = icon;
+     this.icon = './images/'+icon;
      this.sex = sex;
      this.aliases = aliases;
 
